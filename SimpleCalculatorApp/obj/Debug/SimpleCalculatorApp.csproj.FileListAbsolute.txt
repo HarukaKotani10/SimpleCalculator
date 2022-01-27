@@ -28,3 +28,13 @@ C:\Users\17789\Desktop\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalc
 C:\Users\17789\Desktop\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.csproj.CoreCompileInputs.cache
 C:\Users\17789\Desktop\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.exe
 C:\Users\17789\Desktop\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.pdb
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\bin\Debug\SimpleCalculatorApp.exe.config
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\bin\Debug\SimpleCalculatorApp.exe
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\bin\Debug\SimpleCalculatorApp.pdb
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.csprojAssemblyReference.cache
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.SimpleCalculatorForm.resources
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.Properties.Resources.resources
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.csproj.GenerateResource.cache
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.exe
+C:\Users\17789\source\repos\SimpleCalculator\SimpleCalculatorApp\obj\Debug\SimpleCalculatorApp.pdb

@@ -5,10 +5,10 @@ namespace SimpleCalculatorApp
 {
     public partial class SimpleCalculatorForm : Form
     {
-        private float firstNumber, secondNumber, result;
+        private float firstNumber, result;
         private bool isDecimal;
         private bool hasDecimal;
-        private char operation;
+        static char operation;
         private bool isFirstTime;
 
         public SimpleCalculatorForm()
@@ -21,7 +21,6 @@ namespace SimpleCalculatorApp
         {
             labelDisplay.Text = "0";
             firstNumber = 0;
-            secondNumber = 0;
             result = 0;
             isDecimal = false;
             hasDecimal = false;
@@ -64,21 +63,8 @@ namespace SimpleCalculatorApp
             try
             {
                 firstNumber = float.Parse(labelDisplay.Text);
-                switch (operation)
-                {
-                    case '+':
-                        result += firstNumber;
-                        break;
-                    case '-':
-                        result -= firstNumber;
-                        break;
-                    case '*':
-                        result *= firstNumber;
-                        break;
-                    case '/':
-                        result /= firstNumber;
-                        break;
-                }
+                result = HelperCalculation.GetFinalResult(result, firstNumber, operation);
+
                 labelDisplay.Text = "";
                 hasDecimal = false;
 
@@ -103,31 +89,13 @@ namespace SimpleCalculatorApp
         private void ButtonEqual_Click(object sender, EventArgs e)
         {
             float finalResult = 0;
-
             try
             {
                 if (!labelDisplay.Text.Equals("0") && labelDisplay.Text != null && labelDisplay.Text != ".")
                 {
-
-                    secondNumber = float.Parse(labelDisplay.Text);
-                    switch (operation)
-                    {
-                        case '+':
-                            finalResult = result + secondNumber;
-                            break;
-                        case '-':
-                            finalResult = result - secondNumber;
-                            break;
-                        case '*':
-                            finalResult = result * secondNumber;
-                            break;
-                        case '/':
-                            finalResult = result / secondNumber;
-                            break;
-                    }
+                    finalResult = HelperCalculation.GetFinalResult(result, float.Parse(labelDisplay.Text), operation);
                 }
 
-                labelDisplay.Text = finalResult.ToString();
                 hasDecimal = false;
                 result = 0;
                 isFirstTime = true;
@@ -136,6 +104,8 @@ namespace SimpleCalculatorApp
             {
                 // if the input is invalid, do nothing
             }
+
+            labelDisplay.Text = finalResult.ToString();
         }
 
         private void OperationUpdate(string bottonOperator)
